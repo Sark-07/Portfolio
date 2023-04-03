@@ -2,6 +2,8 @@ import React from "react";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import AboutMe from "./pages/AboutMe";
+import Footer from "./components/Footer";
+import Contact from "./pages/Contact";
 
 const App = () => {
   return (
@@ -9,6 +11,8 @@ const App = () => {
       <Navbar />
       <Home />
       <AboutMe />
+      <Contact />
+      <Footer />
     </section>
   );
 };

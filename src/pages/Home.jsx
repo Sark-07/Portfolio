@@ -12,65 +12,67 @@ import { ReactComponent as Css } from "../assets/css.svg";
 import "./__test__/test.css";
 const Home = () => {
   return (
-    <article className="home">
-      <section className="grid">
-        <div className="left">
-          <h1>
-            <Typewriter
-              options={{
-                strings: [
-                  "Hi!! there I'm Prime!",
-                  "Full-Stack Web Developer ✌🏻",
-                ],
-                pauseFor: 3000,
-                autoStart: true,
-                loop: true,
-              }}
-            />
-          </h1>
-          <p>
-            Hiyya! I,m Pritam Sarkar from Kolkata. A Full-stack Web Developer
-            enthusiast!
-          </p>
-          <div className="social-icons">
-            <FaGithub className="icons" /> <FaDiscord className="icons" />
-            <FaLinkedinIn className="icons" />
+    <main className="home-parent">
+      <article className="home">
+        <section className="grid">
+          <div className="left">
+            <h1>
+              <Typewriter
+                options={{
+                  strings: [
+                    "Hi!! there I'm Prime!",
+                    "Full-Stack Web Developer ✌🏻",
+                  ],
+                  pauseFor: 3000,
+                  autoStart: true,
+                  loop: true,
+                }}
+              />
+            </h1>
+            <p>
+              Hiyya! I,m Pritam Sarkar from Kolkata. A passionate Full-stack Web
+              Developer!
+            </p>
+            <div className="social-icons">
+              <FaGithub className="icons" /> <FaDiscord className="icons" />
+              <FaLinkedinIn className="icons" />
+            </div>
           </div>
-        </div>
-        <div className="right">
-          <div className=" gooey"></div>
-        </div>
-      </section>
-      <ul className="technology">
-        <li className="fst-child">
-          Technology <span className="or">|</span>
-        </li>
-        <li>
-          <JavaScript />
-        </li>
-        <li>
-          <ReactIcon />
-        </li>
-        <li>
-          <Node />
-        </li>
-        <li>
-          <MongoDB />
-        </li>
-        <li>
-          <Mysql />
-        </li>
-        <li>
-          <Tailwind />
-        </li>
-        <li>
-          <Html />
-        </li>
-        <li>
-          <Css />
-        </li>
-      </ul>
-    </article>
+          <div className="right">
+            <div className=" gooey"></div>
+          </div>
+        </section>
+        <ul className="technology">
+          <li className="fst-child">
+            Technology <span className="or">|</span>
+          </li>
+          <li>
+            <JavaScript />
+          </li>
+          <li>
+            <ReactIcon />
+          </li>
+          <li>
+            <Node />
+          </li>
+          <li>
+            <MongoDB />
+          </li>
+          <li>
+            <Mysql />
+          </li>
+          <li>
+            <Tailwind />
+          </li>
+          <li>
+            <Html />
+          </li>
+          <li>
+            <Css />
+          </li>
+        </ul>
+      </article>
+    </main>
   );
 };
 
