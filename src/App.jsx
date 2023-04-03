@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import AboutMe from "./pages/AboutMe";
 import Footer from "./components/Footer";
 import Contact from "./pages/Contact";
+import Projects from "./pages/Projects";
 
 const App = () => {
   return (
@@ -11,6 +12,7 @@ const App = () => {
       <Navbar />
       <Home />
       <AboutMe />
+      <Projects />
       <Contact />
       <Footer />
     </section>

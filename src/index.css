@@ -236,6 +236,7 @@ h1 {
 }
 .about-right-inner > h2 {
   color: crimson;
+  font-size: 1.5rem;
 }
 
 .name-desg {
@@ -243,7 +244,7 @@ h1 {
 }
 
 .name-desg > h2 {
-  font-size: 2em;
+  font-size: 2rem;
   color: #000000de;
 }
 
@@ -252,11 +253,34 @@ h1 {
   color: crimson;
 }
 
+/* Projects */
+
+.projects {
+  width: 100%;
+  height: fit-content;
+}
+
+.portfolio {
+  width: 80%;
+  margin-inline: auto;
+}
+
+.portfolio > h2 {
+  font-size: 1.5rem;
+  font-family: "Poppins";
+  color: crimson;
+}
+.portfolio > p {
+  font-family: poppins;
+  font-size: 1.9rem;
+  font-weight: 800;
+  color: #121212ed;
+}
 /* Contact */
 
 .contact-section {
   /* background-color: #f9f9f9; */
-  padding: 2em;
+  padding-block: 2em;
   height: fit-content;
   width: 100%;
   display: flex;
@@ -264,8 +288,12 @@ h1 {
   gap: 3em;
   margin-bottom: 4em;
 }
+.title {
+  margin-inline: auto;
+  width: 80%;
+}
 .title > h2 {
-  font-size: 1.6rem;
+  font-size: 1.5rem;
   font-family: "Poppins";
   color: crimson;
 }

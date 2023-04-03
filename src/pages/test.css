@@ -1,0 +1,61 @@
+.project-card {
+  margin-block: 3em;
+  width: 80%;
+  margin-inline: auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  display: grid;
+  gap: 5em;
+  grid-template-columns: 1fr 0.8fr;
+  padding: 1.5em;
+}
+.project-card-left,
+.project-card-left > img {
+  border-radius: 16px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.project-card-right {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.project-card-right > h3 {
+  display: flex;
+  align-items: center;
+  gap: 0.35em;
+  font-family: "Manrope";
+  font-size: 1.6rem;
+}
+.project-card-right > p {
+  font-family: "Poppins";
+  font-size: 1.1rem;
+}
+.tech-used {
+  display: flex;
+  align-items: center;
+  gap: 3em;
+  justify-content: center;
+}
+.tech-used > span {
+  font-size: 1.5rem;
+  font-family: "Poppins";
+  padding: 0.25em 0.75em;
+  border-radius: 6px;
+  font-weight: 600;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  background: aliceblue;
+}
+.source-code-and-demo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8em;
+}
+.source-code-and-demo > span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8em;
+}
