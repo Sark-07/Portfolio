@@ -1,9 +1,18 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { ReactComponent as Gmail } from "../assets/gmail.svg";
 import { ReactComponent as Location } from "../assets/location.svg";
 import { ReactComponent as Mobile } from "../assets/mobile.svg";
 
 const Contact = () => {
+  const [copied, setCopied] = useState({ bool: false, val: "" });
+  useEffect(() => {
+    const timeout = setTimeout(() => {
+      setCopied({ bool: false, val: "" });
+    }, 1500);
+    return () => {
+      clearTimeout(timeout);
+    };
+  }, [copied]);
   return (
     <section className="contact-section">
       <div className="title">
@@ -11,24 +20,75 @@ const Contact = () => {
         <p>Oh com'on just ping me up 🤙🏻</p>
       </div>
       <div className="contact-info">
-        <div className="common phone">
+        <div
+          className="common phone"
+          onClick={() => {
+            navigator.clipboard.writeText(8777721852);
+            setCopied({ bool: true, val: "Phone" });
+          }}
+        >
           <Mobile />
           <div className="inner">
-            <h3>Phone</h3>
+            <h3>
+              Phone
+              <span
+                className={
+                  copied.bool === true && copied.val === "Phone"
+                    ? "copied"
+                    : "not-copied"
+                }
+              >
+                &nbsp; Copied
+              </span>
+            </h3>
             <p>8777721852</p>
           </div>
         </div>
-        <div className="common mail">
+        <div
+          className="common mail"
+          onClick={() => {
+            navigator.clipboard.writeText("sarkarwork7@gmail.com");
+            setCopied({ bool: true, val: "Gmail" });
+          }}
+        >
           <Gmail />
           <div className="inner">
-            <h3>Gmail</h3>
+            <h3>
+              Gmail
+              <span
+                className={
+                  copied.bool && copied.val === "Gmail"
+                    ? "copied"
+                    : "not-copied"
+                }
+              >
+                &nbsp; Copied
+              </span>
+            </h3>
             <p>sarkarwork7@gmail.com</p>
           </div>
         </div>
-        <div className="common address">
+        <div
+          className="common address"
+          onClick={() => {
+            navigator.clipboard.writeText("Behala, Kolkata");
+            setCopied({ bool: true, val: "Location" });
+          }}
+        >
           <Location />
           <div className="inner">
-            <h3>Location</h3>
+            <h3>
+              Location
+              <span
+                className={
+                  copied.bool && copied.val === "Location"
+                    ? "copied"
+                    : "not-copied"
+                }
+              >
+                &nbsp; Copied
+              </span>
+            </h3>
             <p>Behala, Kolkata</p>
           </div>
         </div>

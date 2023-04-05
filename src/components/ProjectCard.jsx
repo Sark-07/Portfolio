@@ -1,29 +1,23 @@
-import React from "react";
 import { FaGithub } from "react-icons/fa";
 import { BiLinkExternal, BiCube } from "react-icons/bi";
 import "./__test__/test.css";
 
-const ProjectCard = () => {
+const ProjectCard = ({ project, description, technologies, index, img }) => {
+  console.log(technologies);
   return (
     <section className="project-card">
-      <div className="project-card-left">
-        <img
-          src="https://images.unsplash.com/photo-1481833761820-0509d3217039?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8Y2FmZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
-          alt=""
-        />
+      <div className={`project-card-left ${index % 2 !== 0 && "odd-left"}`}>
+        <img src={img} alt="" />
       </div>
-      <div className="project-card-right">
+      <div className={`project-card-right ${index % 2 !== 0 && "odd-right"}`}>
         <h3>
-          Discord <BiCube />
+          {project} <BiCube />
         </h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero natus,
-          ipsam enim quidem, ipsum blanditiis doloribus, autem officia neque qui
-          sed quisquam commodi odio soluta.
-        </p>
+        <p>{description}</p>
         <div className="tech-used">
-          <span>React</span>
-          <span>Vanilla CSS</span>
+          {technologies.map((items, index) => {
+            return <span key={index}>{items}</span>;
+          })}
         </div>
         <div className="source-code-and-demo">
           <span>

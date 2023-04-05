@@ -73,7 +73,7 @@
 .gooey {
   animation: morph 8s ease-in-out infinite;
   background-image: url("../../assets/images/Dp.jpg");
-  background-position: 50%;
+  background-position-y: 25%;
   background-repeat: no-repeat;
   background-size: cover;
   border: 5px solid #2d2e32;
