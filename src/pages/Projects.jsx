@@ -4,7 +4,7 @@ import { data } from "../data/data";
 const Projects = () => {
   const [projectData, setProjectData] = useState(data);
   return (
-    <section className="projects">
+    <section id="projects" className="projects">
       <div className="portfolio">
         <h2>Projects</h2>
         <p>Projects is the only way to upscale your skills!🤝🏻</p>

@@ -3,7 +3,8 @@ export const data = [
         project: "Sportz",
         description: "An online sports shop where you can find all kinds of sports item under a single umbrella. Sportz allows you find your desired sports item by provinding you a stock of having all kind of item from renouned brands.",
         technologies: ['Java Servlet', 'HTML/CSS', 'Bootstrap'],
-        img: '../../src/assets/images/servlet.png'
+        img: '../../src/assets/images/servlet.png',
+        translateY: 72.5
     },
     {
         project: 'Discord Bot',

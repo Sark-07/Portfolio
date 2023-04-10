@@ -12,7 +12,7 @@ import { ReactComponent as Css } from "../assets/css.svg";
 import "./__test__/test.css";
 const Home = () => {
   return (
-    <main className="home-parent">
+    <main id="home" className="home-parent">
       <article className="home">
         <section className="grid">
           <div className="left">

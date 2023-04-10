@@ -1,13 +1,22 @@
 import { FaGithub } from "react-icons/fa";
 import { BiLinkExternal, BiCube } from "react-icons/bi";
 import "./__test__/test.css";
+import { useRef } from "react";
 
 const ProjectCard = ({ project, description, technologies, index, img }) => {
-  console.log(technologies);
+  const im = useRef();
   return (
     <section className="project-card">
       <div className={`project-card-left ${index % 2 !== 0 && "odd-left"}`}>
-        <img src={img} alt="" />
+        <img
+          ref={im}
+          src={img}
+          alt=""
+          onMouseOver={() =>
+            (im.current.style.transform = "translateY(-70.5%)")
+          }
+          onMouseOut={() => (im.current.style.transform = "translateY(0)")}
+        />
       </div>
       <div className={`project-card-right ${index % 2 !== 0 && "odd-right"}`}>
         <h3>

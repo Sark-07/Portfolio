@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500&family=Poppins:wght@400;600;700&family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&family=Poppins:wght@400;600;700;800&family=Shrikhand&display=swap");
 
 *,
 *::after,
@@ -6,6 +6,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 img {
   width: 100%;
@@ -56,9 +57,11 @@ nav {
   align-items: center;
   gap: 0.5em;
 }
-.brand > h4 {
+.brand > a {
   color: rgba(255, 255, 255, 0.87);
   font-size: 1.6rem;
+  font-family: poppins;
+  font-weight: 700;
 }
 .brand > img {
   transition: scale 200ms ease;

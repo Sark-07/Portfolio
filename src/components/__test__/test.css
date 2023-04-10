@@ -6,6 +6,7 @@
   border-radius: 16px;
   display: grid;
   gap: 3em;
+  grid-auto-rows: 28em;
   padding: 1.5em;
 }
 .project-card:nth-child(even) {
@@ -19,16 +20,17 @@
 }
 .project-card-left,
 .project-card-left > img {
+  height: auto;
   border-radius: 16px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 .project-card-left > img {
   transform: translateY(0);
-  transition: transform 10s ease-in-out 0s;
+  transition: transform 8s ease-in-out 0s;
 }
-.project-card-left > img:hover {
-  transform: translateY(-80%);
-}
+/* .project-card-left > img:hover {
+  transform: translateY(-70%);
+} */
 .project-card-right {
   display: flex;
   flex-direction: column;
@@ -70,6 +72,7 @@
   font-weight: bolder;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   background: white;
+  color: #1a1a1ade;
 }
 
 .tech-used > span:hover {

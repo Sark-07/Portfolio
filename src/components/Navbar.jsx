@@ -7,7 +7,10 @@ const Navbar = () => {
       <nav>
         <div className="brand">
           <img src={brand} alt="" />
-          <h4>Vite</h4>
+
+          {/* <h4> */}
+          <a href="http://127.0.0.1:5173/">Prime</a>
+          {/* </h4> */}
         </div>
         <ul>
           <li>
