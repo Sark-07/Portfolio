@@ -3,7 +3,7 @@ export const data = [
         project: "Sportz",
         description: "An online sports shop where you can find all kinds of sports item under a single umbrella. Sportz allows you find your desired sports item by provinding you a stock of having all kind of item from renouned brands.",
         technologies: ['Java Servlet', 'HTML/CSS', 'Bootstrap'],
-        img: '../../src/assets/images/servlet.png',
+        img: 'https://firebasestorage.googleapis.com/v0/b/sportz-17bf3.appspot.com/o/servlet.png?alt=media&token=2de45b6e-e990-4f16-8acf-77049490f398',
         translateY: 72.5
     },
     {
