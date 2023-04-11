@@ -99,8 +99,15 @@
   gap: 0.5em;
   cursor: pointer;
   transition: color 100ms ease;
+  color: #242424;
+}
+.source-code-and-demo > span > a {
+  color: #242424;
 }
 
 .source-code-and-demo > span:hover {
+  color: crimson;
+}
+.source-code-and-demo > span:hover a {
   color: crimson;
 }

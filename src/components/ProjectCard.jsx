@@ -3,7 +3,14 @@ import { BiLinkExternal, BiCube } from "react-icons/bi";
 import "./__test__/test.css";
 import { useRef } from "react";
 
-const ProjectCard = ({ project, description, technologies, index, img }) => {
+const ProjectCard = ({
+  project,
+  description,
+  technologies,
+  index,
+  img,
+  repo,
+}) => {
   const im = useRef();
   return (
     <section className="project-card">
@@ -30,7 +37,10 @@ const ProjectCard = ({ project, description, technologies, index, img }) => {
         </div>
         <div className="source-code-and-demo">
           <span>
-            <p>Source</p>
+            <a href={repo}>
+              <p className="source-code">Source</p>
+            </a>
+
             <FaGithub className="card-icon" />
           </span>
           {/* <span>
