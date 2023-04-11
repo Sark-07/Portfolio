@@ -33,10 +33,10 @@ const ProjectCard = ({ project, description, technologies, index, img }) => {
             <p>Source</p>
             <FaGithub className="card-icon" />
           </span>
-          <span>
+          {/* <span>
             <p>Live Demo</p>
             <BiLinkExternal className="card-icon" />
-          </span>
+          </span> */}
         </div>
       </div>
     </section>
