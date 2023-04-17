@@ -7,7 +7,7 @@ const Projects = () => {
     <section id="projects" className="projects">
       <div className="portfolio">
         <h2>Projects</h2>
-        <p>Projects is the only way to upscale your skills!🤝🏻</p>
+        <p>Projects are the only way to upscale your skills!🤝🏻</p>
       </div>
       {projectData.map((items, index) => {
         return <ProjectCard key={index} {...items} index={index} />;
