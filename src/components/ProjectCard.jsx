@@ -10,6 +10,7 @@ const ProjectCard = ({
   index,
   img,
   repo,
+  translateY,
 }) => {
   const im = useRef();
   return (
@@ -20,7 +21,7 @@ const ProjectCard = ({
           src={img}
           alt=""
           onMouseOver={() =>
-            (im.current.style.transform = "translateY(-70.5%)")
+            (im.current.style.transform = `translateY(${translateY}%)`)
           }
           onMouseOut={() => (im.current.style.transform = "translateY(0)")}
         />
