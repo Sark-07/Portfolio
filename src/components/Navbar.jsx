@@ -66,6 +66,13 @@ const Navbar = () => {
           >
             <a href="#projects">Projects</a>
           </li>
+          <li
+            onClick={() => {
+              setRotate(false);
+            }}
+          >
+            <a href="#contact">Contact</a>
+          </li>
         </ul>
       </nav>
     </>
