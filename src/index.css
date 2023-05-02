@@ -539,7 +539,7 @@ button:focus-visible {
   left: -100%;
   justify-content: center;
   z-index: 999;
-  background: antiquewhite;
+  background: aliceblue;
   transition: left 0.5s ease;
 }
 .mobile-nav-slide {
@@ -547,6 +547,8 @@ button:focus-visible {
 }
 .mobile-nav-elements {
   text-align: center;
+  font-family: poppins;
+  font-size: 1.2rem;
   width: 100%;
   margin-top: 5em;
   display: flex;
@@ -554,6 +556,13 @@ button:focus-visible {
   flex-direction: column;
   gap: 1em;
 }
+.mobile-nav-elements > li {
+  transition: scale 200ms ease;
+}
+.mobile-nav-elements > li:hover {
+  scale: 1.1;
+}
 .mobile-nav-elements > li > a {
+  font-weight: 600;
   color: #1a1a1a;
 }
