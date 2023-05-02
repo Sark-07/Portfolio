@@ -142,7 +142,7 @@ img {
 }
 .right {
   display: grid;
-  place-items: center;
+  place-items: end;
 }
 
 .right > .image {
@@ -220,7 +220,7 @@ li > a:hover {
   display: grid;
   margin-block: 5em;
   width: 75%;
-  gap: 4em;
+  gap: 2.5em;
   margin-inline: auto;
   grid-template-columns: repeat(2, 1fr);
   grid-auto-rows: 21em;
@@ -240,6 +240,9 @@ h1 {
 .about-right-inner > h2 {
   color: crimson;
   font-size: 1.5rem;
+}
+.about-right-inner > p {
+  font-size: 0.9rem;
 }
 
 .name-desg {
@@ -403,8 +406,35 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
-
-@media screen and (width <= 400px) {
+@media screen and (max-width: 1010px) {
+  .home {
+    width: 92%;
+  }
+  .left > h1 {
+    font-size: 3rem;
+  }
+  .about-grid {
+    width: 92%;
+    gap: 2em;
+  }
+  .about-right-inner > p {
+    font-size: 0.9rem;
+  }
+  .technology {
+    width: 100%;
+    gap: 1.5em;
+    justify-content: center;
+  }
+  li > svg {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  .gooey {
+    width: 20rem;
+    height: 20rem;
+  }
+}
+@media screen and (max-width: 799px) {
   /* footer */
   .footer {
     flex-direction: column-reverse;
@@ -416,7 +446,9 @@ button:focus-visible {
   .footer > .social-icons {
     margin-right: 0;
   }
-
+  .address {
+    display: none;
+  }
   /* contact */
   .title {
     width: 90%;
@@ -449,7 +481,7 @@ button:focus-visible {
   /* about */
 
   .about-grid {
-    width: 90%;
+    width: 72%;
     grid-template-columns: 1fr;
     margin-block: 2em;
     gap: 2em;
@@ -472,7 +504,7 @@ button:focus-visible {
 .bars {
   display: none;
 }
-@media screen and (width <= 400px) {
+@media screen and (max-width: 799px) {
   /* navbar */
   .bars {
     display: block;
@@ -496,13 +528,16 @@ button:focus-visible {
   .fst-child {
     flex-basis: 100%;
     justify-content: center;
-    border-bottom: 3px solid rgba(0, 0, 0, 0.589);
+    /* border-bottom: 3px solid rgba(0, 0, 0, 0.589); */
   }
   .fst-child > .or {
     display: none;
   }
 
-  /* gooey */
+  /* right && gooey */
+  .right {
+    place-items: center;
+  }
   .gooey {
     width: 17rem;
     height: 17rem;
@@ -530,6 +565,12 @@ button:focus-visible {
     justify-content: center;
   }
 }
+@media screen and (max-width: 550px) {
+  .about-grid {
+    width: 90%;
+  }
+}
+
 .mobile-nav {
   width: 82%;
   height: 100vh;

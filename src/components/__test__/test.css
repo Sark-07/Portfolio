@@ -113,7 +113,7 @@
   color: crimson;
 }
 
-@media screen and (width <= 1010px) {
+@media screen and (max-width: 1010px) {
   .project-card:nth-child(even),
   .project-card:nth-child(odd) {
     grid-template-columns: 100%;
@@ -141,7 +141,7 @@
   }
 }
 
-@media screen and (width <= 400px) {
+@media screen and (max-width: 799px) {
   .project-card:nth-child(even),
   .project-card:nth-child(odd) {
     width: 92%;

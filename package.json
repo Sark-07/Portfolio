@@ -6,7 +6,8 @@
   "scripts": {
     "start": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+     "host": "vite --host"
   },
   "dependencies": {
     "@svgx/vite-plugin-react": "^1.0.1",
