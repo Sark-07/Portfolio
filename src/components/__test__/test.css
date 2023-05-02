@@ -1,19 +1,20 @@
 .project-card {
   margin-block: 3em;
-  width: 72%;
+  width: 60em;
+  height: 29em;
   margin-inline: auto;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 16px;
   display: grid;
   gap: 3em;
-  grid-auto-rows: 28em;
+  grid-auto-rows: 26em;
   padding: 1.5em;
 }
 .project-card:nth-child(even) {
-  grid-template-columns: 1fr 24em;
+  grid-template-columns: 30em 24em;
 }
 .project-card:nth-child(odd) {
-  grid-template-columns: 24em 1fr;
+  grid-template-columns: 24em 30em;
 }
 .project-card-left {
   overflow: hidden;
@@ -110,4 +111,61 @@
 }
 .source-code-and-demo > span:hover a {
   color: crimson;
+}
+
+@media screen and (width <= 1010px) {
+  .project-card:nth-child(even),
+  .project-card:nth-child(odd) {
+    grid-template-columns: 100%;
+    width: 40em;
+    gap: 0;
+    height: fit-content;
+    grid-auto-rows: 26em 22em;
+  }
+
+  .odd-left {
+    grid-column: 1/-1;
+    grid-row: 1/2;
+  }
+  .odd-right {
+    grid-column: 1/-1;
+    grid-row: 2/2;
+  }
+  .source-code-and-demo > span {
+    margin-bottom: 0;
+  }
+  .project-card-right {
+    justify-content: center;
+    align-items: center;
+    padding-inline: 2em;
+  }
+}
+
+@media screen and (width <= 400px) {
+  .project-card:nth-child(even),
+  .project-card:nth-child(odd) {
+    width: 92%;
+    gap: 2em;
+    height: max-content;
+    grid-auto-rows: 19em min-content;
+  }
+  .odd-right {
+    justify-content: flex-start;
+  }
+  .project-card-right {
+    justify-content: flex-start;
+  }
+  .project-card-right > h3 {
+    font-size: 1.2rem;
+  }
+  .project-card-right > p {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+  .tech-used > span {
+    font-size: 1rem;
+  }
+  .source-code-and-demo {
+    margin-top: 0;
+  }
 }

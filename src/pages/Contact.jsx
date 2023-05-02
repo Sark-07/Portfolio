@@ -44,6 +44,31 @@ const Contact = () => {
             <p>8777721852</p>
           </div>
         </div>
+
+        <div
+          className="common address"
+          onClick={() => {
+            navigator.clipboard.writeText("Behala, Kolkata");
+            setCopied({ bool: true, val: "Location" });
+          }}
+        >
+          <Location />
+          <div className="inner">
+            <h3>
+              Location
+              <span
+                className={
+                  copied.bool && copied.val === "Location"
+                    ? "copied"
+                    : "not-copied"
+                }
+              >
+                &nbsp; Copied
+              </span>
+            </h3>
+            <p>Behala, Kolkata</p>
+          </div>
+        </div>
         <div
           className="common mail"
           onClick={() => {
@@ -72,30 +97,6 @@ const Contact = () => {
               <p>sarkarwork7@gmail.com</p>
             </div>
           </a>
-        </div>
-        <div
-          className="common address"
-          onClick={() => {
-            navigator.clipboard.writeText("Behala, Kolkata");
-            setCopied({ bool: true, val: "Location" });
-          }}
-        >
-          <Location />
-          <div className="inner">
-            <h3>
-              Location
-              <span
-                className={
-                  copied.bool && copied.val === "Location"
-                    ? "copied"
-                    : "not-copied"
-                }
-              >
-                &nbsp; Copied
-              </span>
-            </h3>
-            <p>Behala, Kolkata</p>
-          </div>
         </div>
       </div>
     </section>
