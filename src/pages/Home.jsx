@@ -21,7 +21,8 @@ const Home = () => {
                 options={{
                   strings: [
                     "Hi!! there I'm Prime!",
-                    "Full-Stack Web Developer ✌🏻",
+                    "Web Developer ✌🏻",
+                    "Web3 & AI/ML Enthusiast.",
                   ],
                   pauseFor: 3000,
                   autoStart: true,
@@ -30,8 +31,8 @@ const Home = () => {
               />
             </h1>
             <p>
-              Hiyya! I,m Pritam Sarkar from Kolkata. A passionate Full-stack Web
-              Developer!
+              Hi! I'm Pritam Sarkar. A passionate Web
+              Developer from Kolkata.
             </p>
             <div className="social-icons">
               <FaGithub className="icons" /> <FaDiscord className="icons" />
