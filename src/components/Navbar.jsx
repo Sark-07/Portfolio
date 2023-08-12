@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import brand from "../assets/vite.svg";
+import {FaPiedPiperAlt} from 'react-icons/fa'
 import { Cross as Hamburger } from "hamburger-react";
+// import brand from "../assets/vite.svg";
 
 const Navbar = () => {
   const [rotate, setRotate] = useState(false);
@@ -11,7 +12,8 @@ const Navbar = () => {
       "
       >
         <div className="brand">
-          <img src={brand} alt="" />
+          {/* <img src={brand} alt="" /> */}
+          <FaPiedPiperAlt/>
 
           {/* <h4> */}
           <a href="https://portfolio-sark-07.vercel.app/">Prime</a>

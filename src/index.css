@@ -79,6 +79,11 @@ img {
   align-items: center;
   gap: 0.5em;
 }
+.brand > svg {
+   color: aliceblue;
+   font-size: 2.5rem;
+}
+
 .brand > a {
   color: rgba(255, 255, 255, 0.87);
   font-size: 1.6rem;
