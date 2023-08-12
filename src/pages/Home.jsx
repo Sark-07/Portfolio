@@ -23,6 +23,7 @@ const Home = () => {
                     "Hi!! there I'm Prime!",
                     "Web Developer ✌🏻",
                     "Web3 & AI/ML Enthusiast.",
+                    "Cover Designer.",
                   ],
                   pauseFor: 3000,
                   autoStart: true,
