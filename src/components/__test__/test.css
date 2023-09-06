@@ -70,6 +70,7 @@
   font-family: "Manrope";
   padding: 0.25em 0.75em;
   transition: scale 100ms ease;
+  border-radius: 4px;
   font-weight: bolder;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   background: white;

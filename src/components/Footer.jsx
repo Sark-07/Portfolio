@@ -6,8 +6,7 @@ const Footer = () => {
     <section className="footer">
       <div className="copyright">
         <p>
-          copyright &#xa9;
-          {new Date().getFullYear()} | All rights reserved{" "}
+          copyright &#xa9; {new Date().getFullYear()} | All rights reserved{" "}
         </p>
       </div>
       <div className="social-icons">
