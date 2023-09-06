@@ -15,7 +15,7 @@ const AboutMe = () => {
             <h2>About me</h2>
             <div className="name-desg">
               <h2>Pritam Sarkar</h2>
-              <p>Full-stack Developer</p>
+              <p>Web Developer</p>
             </div>
             <p>
               Hi, I am Pritam from Kolkata, India. I have completed my bachelors
@@ -24,7 +24,7 @@ const AboutMe = () => {
               explore new technologies. I am a web developer and designer and I
               mostly work in Javascript. I know React js, node js, express js,
               tailwind css, html, mongodb, sql, Adobe photoshop, figma. Apart
-              from this I am a cover designer and I have worked for few authors.
+              from this I am a cover designer and I have worked for a few authors.
             </p>
           </div>
         </div>
