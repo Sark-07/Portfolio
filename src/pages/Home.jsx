@@ -20,7 +20,7 @@ const Home = () => {
               <Typewriter
                 options={{
                   strings: [
-                    "Hi!! there I'm Prime!",
+                    "Hi!! there I'm Pritam!",
                     "Web Developer ✌🏻",
                     "Web3 & AI/ML Enthusiast.",
                     "Cover Designer.",
