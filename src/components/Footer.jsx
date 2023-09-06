@@ -6,7 +6,7 @@ const Footer = () => {
     <section className="footer">
       <div className="copyright">
         <p>
-          copyright <sup> &#xa9; </sup>
+          copyright &#xa9;
           {new Date().getFullYear()} | All rights reserved{" "}
         </p>
       </div>
