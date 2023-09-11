@@ -6,8 +6,8 @@ const AboutMe = () => {
       <main className="about-grid">
         <div className="about-left">
           <img
-            src="https://images.unsplash.com/photo-1620570623737-efc0ec4ab486?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTl8fHRlY2hub2xvZ3klMjBhYnN0cmFjdHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
-            alt=""
+            src="https://ideogram.ai/api/images/direct/IAjEAYy8SMimAx311puKAQ"
+            alt="About Image"
           />
         </div>
         <div className="about-right">
