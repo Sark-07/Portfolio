@@ -1,3 +1,44 @@
+/* Technologies */
+
+.tech {
+  width: 100%;
+  height: fit-content;
+  max-height: 15rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75em;
+  align-items: center;
+  justify-content: center;
+  padding: 1em;
+  margin-top: 2em;
+}
+
+.tech>h2 {
+  font-weight: 900;
+  font-size: 2.2rem;
+  font-family: poppins;
+  color: #000000de;
+}
+
+.tech>ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  flex-wrap: wrap;
+}
+
+.tech>ul>li {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.09);
+  padding: 0.5em;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+
 .project-card {
   margin-block: 3em;
   width: 60em;
@@ -10,25 +51,31 @@
   grid-auto-rows: 26em;
   padding: 1.5em;
 }
+
 .project-card:nth-child(even) {
   grid-template-columns: 30em 24em;
 }
+
 .project-card:nth-child(odd) {
   grid-template-columns: 24em 30em;
 }
+
 .project-card-left {
   overflow: hidden;
 }
+
 .project-card-left,
-.project-card-left > img {
+.project-card-left>img {
   height: auto;
   border-radius: 16px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
-.project-card-left > img {
+
+.project-card-left>img {
   transform: translateY(0);
   transition: transform 8s ease-in-out 0s;
 }
+
 /* .project-card-left > img:hover {
   transform: translateY(-70%);
 } */
@@ -37,27 +84,33 @@
   flex-direction: column;
   gap: 1em;
 }
+
 .odd-right {
   grid-column: 1/2;
   grid-row: 1/2;
 }
+
 .odd-left {
   grid-column: 2/3;
 }
-.project-card-right > h3 {
+
+.project-card-right>h3 {
   display: flex;
   align-items: center;
   gap: 0.35em;
   font-family: "Poppins";
   font-size: 1.6rem;
 }
-.project-card-right > h3:hover svg {
+
+.project-card-right>h3:hover svg {
   scale: 1.1;
 }
-.project-card-right > p {
+
+.project-card-right>p {
   font-family: "Poppins";
   font-size: 1.1rem;
 }
+
 .tech-used {
   flex-wrap: wrap;
   display: flex;
@@ -65,7 +118,8 @@
   gap: 1em;
   justify-content: center;
 }
-.tech-used > span {
+
+.tech-used>span {
   font-size: 1.4rem;
   font-family: "Manrope";
   padding: 0.25em 0.75em;
@@ -77,9 +131,10 @@
   color: #1a1a1ade;
 }
 
-.tech-used > span:hover {
+.tech-used>span:hover {
   scale: 1.1;
 }
+
 .source-code-and-demo {
   margin-top: 2em;
   display: flex;
@@ -87,11 +142,13 @@
   justify-content: center;
   gap: 2em;
 }
+
 .card-icon {
   width: 2rem;
   height: 2rem;
 }
-.source-code-and-demo > span {
+
+.source-code-and-demo>span {
   margin-bottom: 2em;
   font-size: 1.3rem;
   font-weight: 600;
@@ -103,18 +160,21 @@
   transition: color 100ms ease;
   color: #242424;
 }
-.source-code-and-demo > span > a {
+
+.source-code-and-demo>span>a {
   color: #242424;
 }
 
-.source-code-and-demo > span:hover {
+.source-code-and-demo>span:hover {
   color: crimson;
 }
-.source-code-and-demo > span:hover a {
+
+.source-code-and-demo>span:hover a {
   color: crimson;
 }
 
 @media screen and (max-width: 1010px) {
+
   .project-card:nth-child(even),
   .project-card:nth-child(odd) {
     grid-template-columns: 100%;
@@ -128,13 +188,16 @@
     grid-column: 1/-1;
     grid-row: 1/2;
   }
+
   .odd-right {
     grid-column: 1/-1;
     grid-row: 2/2;
   }
-  .source-code-and-demo > span {
+
+  .source-code-and-demo>span {
     margin-bottom: 0;
   }
+
   .project-card-right {
     justify-content: center;
     align-items: center;
@@ -143,6 +206,7 @@
 }
 
 @media screen and (max-width: 799px) {
+
   .project-card:nth-child(even),
   .project-card:nth-child(odd) {
     width: 92%;
@@ -150,23 +214,39 @@
     height: max-content;
     grid-auto-rows: 19em min-content;
   }
+
   .odd-right {
     justify-content: flex-start;
   }
+
   .project-card-right {
     justify-content: flex-start;
   }
-  .project-card-right > h3 {
+
+  .project-card-right>h3 {
     font-size: 1.2rem;
   }
-  .project-card-right > p {
+
+  .project-card-right>p {
     font-size: 0.9rem;
     text-align: center;
   }
-  .tech-used > span {
+
+  .tech-used>span {
     font-size: 1rem;
   }
+
   .source-code-and-demo {
     margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .tech{
+    margin-top: 1em;
+  }
+  .tech > h2{
+    font-size: 1.9rem;
+    text-align: center;
   }
 }

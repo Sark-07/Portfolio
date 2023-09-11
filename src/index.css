@@ -190,6 +190,9 @@ img {
   gap: 1em;
 }
 
+.social-icons > a{
+  color: #000000c8;
+}
 .icons {
   width: 2em;
   height: 2em;
@@ -398,6 +401,11 @@ h1 {
   gap: 1em;
   color: #ffffffad;
   margin-right: 8em;
+}
+
+.footer > .social-icons > a{
+
+  color: inherit;
 }
 .footer-icons {
   width: 1.5em;
