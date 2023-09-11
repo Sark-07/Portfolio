@@ -11,7 +11,7 @@ import { ReactComponent as Python } from '../assets/python.svg';
 import { ReactComponent as Java } from '../assets/java.svg';
 import { ReactComponent as Figma } from '../assets/figma.svg';
 import { ReactComponent as Git } from '../assets/git.svg';
-import { ReactComponent as Github } from '../assets/Github.svg';
+import { ReactComponent as Github } from '../assets/github.svg';
 import {SiC, SiCplusplus, SiAdobephotoshop} from 'react-icons/si'
 import './__test__/test.css'
 import { SiFigma } from 'react-icons/si';
