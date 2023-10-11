@@ -23,7 +23,7 @@ const Home = () => {
                 options={{
                   strings: [
                     "Hi!! there I'm Pritam!",
-                    'Web Developer ✌🏻',
+                    'React Developer ✌🏻',
                     'Web3 & AI/ML Enthusiast.',
                     'Cover Designer.',
                   ],
@@ -34,7 +34,7 @@ const Home = () => {
               />
             </h1>
             <p>
-              Hi! I'm Pritam Sarkar. A passionate Web Developer from Kolkata.
+              Hi! I'm Pritam Sarkar. A passionate React Developer from Kolkata.
             </p>
             <div className='social-icons'>
               <a href="https://www.github.com/sark-07">

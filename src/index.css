@@ -300,22 +300,46 @@ h1 {
   padding-block: 2em;
 }
 
-.portfolio {
+.common-section-head-inner {
   width: 80%;
   margin-inline: auto;
 }
 
-.portfolio > h2 {
+.common-section-head-inner > h2 {
   font-size: 1.5rem;
   font-family: "Poppins";
   color: crimson;
 }
-.portfolio > p {
+.common-section-head-inner > p {
   font-family: poppins;
   font-size: 1.9rem;
   font-weight: 800;
   color: #121212ed;
 }
+
+
+
+/* Freelance Work */
+.freelance-work-img-grid-box{
+  width: 80%;
+  margin-inline: auto;
+}
+
+.freelance-work-img-grid-box > ul{
+  padding-block: 2em;
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 1rem;
+}
+
+.freelance-work-img-grid-box > ul > li{
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+
+
 /* Contact */
 
 .contact-section {
@@ -394,6 +418,16 @@ h1 {
   font-family: poppins;
   color: #ffffffad;
 }
+.footer > .copyright > p {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.footer > .copyright > p > span{
+  color: crimson;
+}
+
 .footer > .social-icons {
   padding: 0.25em;
   display: flex;
@@ -487,15 +521,8 @@ button:focus-visible {
     display: none;
   }
   /* contact */
-  .title {
-    width: 90%;
-  }
   .title > p {
-    text-align: center;
     font-size: 1.7rem;
-  }
-  .title > h2 {
-    text-align: center;
   }
   .contact-section {
     gap: 2em;
@@ -531,9 +558,12 @@ button:focus-visible {
     font-size: 0.9rem;
   }
 
-  /* portfolio */
+  /* portfolio & freelance work common head*/
 
-  .portfolio {
+  .freelance-work-img-grid{
+    width: 90%;
+  }
+  .common-section-head-inner{
     width: 90%;
     text-align: center;
   }

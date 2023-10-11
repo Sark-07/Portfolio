@@ -15,7 +15,7 @@ const Contact = () => {
   }, [copied]);
   return (
     <section id="contact" className="contact-section">
-      <div className="title">
+      <div className="title common-section-head-inner">
         <h2>Contact</h2>
         <p>Oh com'on just ping me up 🤙🏻</p>
       </div>
@@ -72,14 +72,14 @@ const Contact = () => {
         <div
           className="common mail"
           onClick={() => {
-            navigator.clipboard.writeText("sarkarwork7@gmail.com");
+            navigator.clipboard.writeText("pritamsarkar.ps07@gmail.com");
             setCopied({ bool: true, val: "Gmail" });
           }}
         >
           <Gmail />
           <a
             style={{ color: "inherit" }}
-            href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=sarkarwork07@gmail.com"
+            href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=pritamsarkar.ps07@gmail.com"
           >
             <div className="inner">
               <h3>
@@ -94,7 +94,7 @@ const Contact = () => {
                 &nbsp; Copied
               </span> */}
               </h3>
-              <p>sarkarwork7@gmail.com</p>
+              <p>pritamsarkar.ps07@gmail.com</p>
             </div>
           </a>
         </div>

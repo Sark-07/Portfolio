@@ -6,6 +6,7 @@ import Footer from "./components/Footer";
 import Contact from "./pages/Contact";
 import Projects from "./pages/Projects";
 import Technology from "./components/Technology";
+import FreelanceWork from "./pages/FreelanceWork";
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
       <Technology/>
       <AboutMe />
       <Projects />
+      <FreelanceWork/>
       <Contact />
       <Footer />
     </section>

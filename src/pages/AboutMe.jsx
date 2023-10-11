@@ -15,16 +15,11 @@ const AboutMe = () => {
             <h2>About me</h2>
             <div className="name-desg">
               <h2>Pritam Sarkar</h2>
-              <p>Web Developer</p>
+              <p>React Developer</p>
             </div>
             <p>
-              Hi, I am Pritam from Kolkata, India. I have completed my bachelors
-              from Vivekananda college and right now I'm pursuing MCA from
-              Calcutta University. I am a technology enthusiast and love to
-              explore new technologies. I am a web developer and designer and I
-              mostly work in Javascript. I know React js, node js, express js,
-              tailwind css, html, mongodb, sql, Adobe photoshop, figma. Apart
-              from this I am a cover designer and I have worked for a few authors.
+            Hello there! My name is Pritam and I come from Kolkata, India. I have completed my Bachelor's degree from Vivekananda College and I am currently pursuing my MCA from Calcutta University. As a technology enthusiast, I enjoy exploring new technologies and I specialize in web development and design using MERN stack. I have experience with React JS, Node JS, Express JS, Tailwind CSS, HTML, MongoDB, SQL, Adobe Photoshop, and Figma. Additionally, I am also a cover designer and have had the opportunity to work with a few authors.
+
             </p>
           </div>
         </div>

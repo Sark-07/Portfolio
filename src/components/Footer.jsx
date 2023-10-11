@@ -1,12 +1,12 @@
 import React from 'react';
-import { FaInstagram, FaGithub, FaDiscord } from 'react-icons/fa';
+import { FaInstagram, FaGithub, FaDiscord, FaReact } from 'react-icons/fa';
 
 const Footer = () => {
   return (
     <section className='footer'>
       <div className='copyright'>
         <p>
-          copyright &#xa9; {new Date().getFullYear()} | All rights reserved{' '}
+          Made with <span>&#x2764;</span> & <FaReact style={{color: '#61DBFB'}}/>
         </p>
       </div>
       <div className='social-icons'>

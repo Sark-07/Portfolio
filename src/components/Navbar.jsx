@@ -29,6 +29,9 @@ const Navbar = () => {
           <li>
             <a href="#projects">Projects</a>
           </li>
+          <li>
+            <a href="#freelance-work">Freelance Work</a>
+          </li>
         </ul>
         <div className="contact nav-elements">
           <a href="#contact">Contact</a>
@@ -67,6 +70,13 @@ const Navbar = () => {
             }}
           >
             <a href="#projects">Projects</a>
+          </li>
+          <li
+            onClick={() => {
+              setRotate(false);
+            }}
+          >
+            <a href="#freelance-work">Freelance Work</a>
           </li>
           <li
             onClick={() => {
