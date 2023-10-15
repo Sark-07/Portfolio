@@ -320,6 +320,9 @@ h1 {
 
 
 /* Freelance Work */
+.freelance-work{
+  padding-block: 2em;
+}
 .freelance-work-img-grid-box{
   width: 80%;
   margin-inline: auto;
@@ -343,14 +346,14 @@ h1 {
 /* Contact */
 
 .contact-section {
-  /* background-color: #f9f9f9; */
-  padding-block: 2em;
+  background-color: #f9f9f9;
+  padding-block: 2em 4em;
   height: fit-content;
   width: 100%;
   display: flex;
   flex-direction: column;
   gap: 3em;
-  margin-bottom: 4em;
+  /* margin-bottom: 4em; */
 }
 .title {
   margin-inline: auto;
@@ -526,7 +529,7 @@ button:focus-visible {
   }
   .contact-section {
     gap: 2em;
-    margin-bottom: 3em;
+    /* margin-bottom: 3em; */
   }
   .contact-info {
     flex-direction: column;
