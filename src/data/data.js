@@ -18,10 +18,26 @@ export const data = [
     {
         project: "Sportz",
         description: "An online sports shop where you can find all kinds of sports item under a single umbrella. Sportz allows you find your desired sports item by provinding you a stock of having all kind of item from renouned brands.",
-        technologies: ['Java Servlet', 'HTML/CSS', 'Bootstrap'],
+        technologies: ['Java Servlet', 'HTML/CSS', 'Bootstrap', 'MySQL'],
         img: 'https://firebasestorage.googleapis.com/v0/b/sportz-17bf3.appspot.com/o/servlet.png?alt=media&token=2de45b6e-e990-4f16-8acf-77049490f398',
         repo: 'https://github.com/Sark-07/sportz',
         translateY: -60
+    },
+    {
+        project: 'SalesBoard',
+        description: 'Created a visually appealing sales dashboard interface (Desktop view) for a garment shop, drawing inspiration from dribble designs.',
+        technologies: ['React', 'Chart.js', 'Tailwind CSS'],
+        img: 'https://firebasestorage.googleapis.com/v0/b/sportz-17bf3.appspot.com/o/SalesBoard.png?alt=media&token=f72704aa-073a-4729-b344-ce1c26a27d1a',
+        repo: 'https://github.com/Sark-07/React-Tailwind-Dashboard',
+        translateY: -60
+    },
+    {
+        project: 'TCP-Chat App',
+        description: 'A chatting app implemented using C - Programming Language by using TCP-Socket programming.',
+        technologies: ['C Language'],
+        img: 'https://firebasestorage.googleapis.com/v0/b/sportz-17bf3.appspot.com/o/TCP.png?alt=media&token=38b09c22-52f0-4da6-8f6a-b16e0f2258ee',
+        repo: 'https://github.com/Sark-07/Tcp-client-server-chat-app',
+        translateY: 0
     },
     {
         project: 'Discord Bot',
