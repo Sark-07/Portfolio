@@ -29,7 +29,7 @@ export const data = [
         technologies: ['React', 'Chart.js', 'Tailwind CSS'],
         img: 'https://firebasestorage.googleapis.com/v0/b/sportz-17bf3.appspot.com/o/SalesBoard.png?alt=media&token=f72704aa-073a-4729-b344-ce1c26a27d1a',
         repo: 'https://github.com/Sark-07/React-Tailwind-Dashboard',
-        translateY: -60
+        translateY: -50
     },
     {
         project: 'TCP-Chat App',
@@ -42,7 +42,7 @@ export const data = [
     {
         project: 'Discord Bot',
         description: 'A Discord chat bot that is integrated with monkeydev\'s api and reddit-memes which is capable of showing latest reddit memes and answering your queries.',
-        technologies: ['Node js'],
+        technologies: ['Node js', 'Discord.js'],
         img: 'https://ideogram.ai/api/images/direct/o4A0Jw3DTIiIUvI0TCUwOw',
         repo: 'https://github.com/Sark-07/Discord-Bot',
         translateY: 0
