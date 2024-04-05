@@ -28,7 +28,7 @@ export const data = [
         description: 'Created a visually appealing sales dashboard interface (Desktop view) for a garment shop, drawing inspiration from dribble designs.',
         technologies: ['React', 'Chart.js', 'Tailwind CSS'],
         img: 'https://firebasestorage.googleapis.com/v0/b/sportz-17bf3.appspot.com/o/SalesBoard.png?alt=media&token=f72704aa-073a-4729-b344-ce1c26a27d1a',
-        repo: 'https://github.com/Sark-07/React-Tailwind-Dashboard',
+        repo: 'https://github.com/Sark-07/Next-Tailwind-Dashboard',
         translateY: -50
     },
     {
