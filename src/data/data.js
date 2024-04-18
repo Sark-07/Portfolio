@@ -8,7 +8,7 @@ export const data = [
         translateY: -40
     },
     {
-        project: "DALL•E CLONE",
+        project: "ImageGen",
         description: " An image generation tool, clone of Dall • E where user can generate images by prompting.",
         technologies: ['React', 'Tailwind CSS', 'Node', 'Express'],
         img: 'https://firebasestorage.googleapis.com/v0/b/sportz-17bf3.appspot.com/o/Dall-e.png?alt=media&token=afe7067a-27dd-4e8f-ac1a-d51f769993f7',
